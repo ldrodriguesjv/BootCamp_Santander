@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Align Items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            margin: 2px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        .column{
+            flex-direction: column;
+        }    
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .base-line{
+            align-items: baseline;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+        <h1>Row</h1>
+        <p>
+        <h1> Center</h1> 
+        </p>
+    </br>    
+    <section class="container center">
+        <div class="item">item 1</div>
+        <div class="item">item lorem ipsum dolor sit </div>
+        <div class="item">item teste de alinhamento</div>
+    </section>
+        <p>
+         <h1> Stretch</h1> 
+        </p>
+     
+    <section class="container stretch">
+        <div class="item">item 1</div>
+        <div class="item">item loresdfasdfm ipsum dolor sit </div>
+        <div class="item">item teste de alinhamento do flexbox e muito bom</div>
+    </section>
+
+        <p>
+            <h1> Flex Start</h1> 
+        </p>
+    <section class="container flex-start">
+        <div class="item">item 1</div>
+        <div class="item">item lorem ipsum dolor sit hghgdj gfjhgf gf jgfj hgfjhgj gfhjgf </div>
+        <div class="item">item teste de alinhamento</div>
+    </section>
+    
+    <p>
+        <h1> Flex End</h1> 
+    </p>
+    <section class="container flex-end">
+        <div class="item">item 1</div>
+        <div class="item">item lorem ipsum dolor sit vcmbnvcmbnvcmnbc  hgfjhgf ghfjhgf gjhfjh g jhgfjhgf </div>
+        <div class="item">item teste de alinhamento</div>
+    </section>
+
+    <p>
+        <h1> Base Line</h1> 
+    </p>
+    <section class="container base-line">
+        <div class="item"><br>item 1</br></div>
+        <div class="item">item lorem ipsum dolor sit </div>
+        <div class="item">item teste de alinhamento,nbv ,mnbv n jhn hkljlkjh kjhiu mvljhvljhvljv</div>
+    </section>
+
+
+    <br>
+    <h1>Column</h1>
+    <p>
+    <h1> Center</h1> 
+    </p>
+</br>    
+
+<section class="container center column">
+    <div class="item">item 1</div>
+    <div class="item">item lorem ipsum dolor sit </div>
+    <div class="item">item teste de alinhamento</div>
+</section>
+
+<p>
+     <h1> Stretch</h1> 
+    </p>
+ 
+<section class="container stretch column">
+    <div class="item">item 1</div>
+    <div class="item">item loresdfasdfm ipsum dolor sit </div>
+    <div class="item">item teste de alinhamento do flexbox e muito bom</div>
+</section>
+
+    <p>
+        <h1> Flex Start</h1> 
+    </p>
+<section class="container flex-start column">
+    <div class="item">item 1</div>
+    <div class="item">item lorem ipsum dolor sit hghgdj gfjhgf gf jgfj hgfjhgj gfhjgf </div>
+    <div class="item">item teste de alinhamento</div>
+</section>
+
+<p>
+    <h1> Flex End</h1> 
+</p>
+<section class="container flex-end column">
+    <div class="item">item 1</div>
+    <div class="item">item lorem ipsum dolor sit vcmbnvcmbnvcmnbc  hgfjhgf ghfjhgf gjhfjh g jhgfjhgf </div>
+    <div class="item">item teste de alinhamento</div>
+</section>
+
+<p>
+    <h1> Base Line</h1> 
+</p>
+<section class="container base-line column">
+    <div class="item"><br>item 1</br></div>
+    <div class="item">item lorem ipsum dolor sit </div>
+    <div class="item">item teste de alinhamento,nbv ,mnbv n jhn hkljlkjh kjhiu mvljhvljhvljv</div>
+</section>
+
+
+<br><br><br>
+<p><h1>Alinhamento centro da tela</h1></p>
+    <section class="container central center">
+        <div class="item">
+            adsfasdfasdf jhaskjdhdjgbf a\kjhgfhjmdghjhdfg fgh dfghd dfghdfgh afbv kjb\zikasdfb akjb fvakbd fv vakjfb vadfbvgkabdfvkba akjbgfa kaj
+        </div>
+    </section>
+</body>
+</html>
