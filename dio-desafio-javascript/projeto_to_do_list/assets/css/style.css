@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #0F0F0B;
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background-color: #fff;
+    padding:0;
+    margin:0;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+.todo {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+}
+.todo > h3{
+    font-size:20px;
+}
+
+.todo_title > p{
+    font-size: 50px;
+    align-items: center;
+}
+
+#todolist{
+    display: flex;
+    border: 2px solid grey;
+    flex-direction: column ;
+    width: 60%;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.todo_new_item > input[name='btn']{
+    border-radius: 4px;
+    border:1px solid black;
+    width:10%;
+    height:50%;
+}
+
+.todo__item > input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+    font: inherit;
+}
+.todo_item{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+   /* box-shadow: 1px 1px 5px var(--secondary-color);*/
+}
+.todo_item > div {
+    width: 80%;
+}
+.todo_item:hover {
+    cursor: pointer;
+    transition: all .5s ease;
+   /* background-color: var(--secondary-color);
+    color: var(--primary-color);*/
+}
+
+
+.todo_item > input[type='text'] {
+    border: none;
+    width: 80%;
+    font: inherit;
+    font-size:14px;
+    
+}
+
+.todo_item > input[type='button'],
+.todo_item > input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+    font: inherit;
+    font-size:14px;
+    
+}
+
+
+.todo_item > input[type='checkbox']:checked  + div {
+    text-decoration:line-through;
+    font-size:14px;
+}
+.todo_new_item{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 10px;
+    font: inherit;
+}
+.todo_new_item > input{
+    background-color: #fff;
+    width: 40%;
+    height:20px;
+    outline: none;
+    font-family:"Open Sans",sans-serif;
+    padding:6px;
+    font-size:14px;
+}
+
+.todo_new_item > input::placeholder {
+    font-style: italic;
+    font-weight: normal;
+}
+.todo_new_item > button{
+    border-radius: 5px;
+    border:1px solid grey;
+    background-color:rgb(198, 206, 214);
+    text-align: center;
+    padding: 6px;
+    font-size:14px;
+    font-family:"Open Sans",sans-serif;
+    width: 70px;
+    height: 35px
+}
